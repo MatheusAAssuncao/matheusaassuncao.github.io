@@ -78,6 +78,7 @@
     // Success and Error functions for after the form is submitted
     
     function success() {
+      alert("Mensagem enviada com sucesso!");
       form.reset();
       status.innerHTML = "<span style='color: green;'><strong>Obrigado!</strong></span>";
       button.style = "display: none ";
