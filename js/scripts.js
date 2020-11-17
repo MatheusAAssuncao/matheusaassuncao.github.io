@@ -79,8 +79,8 @@
     
     function success() {
       form.reset();
-      button.style = "display: none ";
       status.innerHTML = "<span style='color: green;'><strong>Obrigado!</strong></span>";
+      button.style = "display: none ";
     }
 
     function error() {
