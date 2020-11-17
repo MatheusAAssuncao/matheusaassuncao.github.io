@@ -80,11 +80,11 @@
     function success() {
       form.reset();
       button.style = "display: none ";
-      status.innerHTML = "<span style='color: green; font-weight:500;'>Obrigado!</span>";
+      status.innerHTML = "<span style='color: green;'><strong>Obrigado!</strong></span>";
     }
 
     function error() {
-      status.innerHTML = "<span style='color: red; font-weight:500;'>Houve um problema :/</span>";
+      status.innerHTML = "<span style='color: red;'><strong>Houve um problema :/</strong></span>";
     }
 
     // handle the form submission event
