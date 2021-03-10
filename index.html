@@ -445,5 +445,18 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script>
+            window.watsonAssistantChatOptions = {
+                integrationID: "94323341-e253-4013-a337-214692c3a0c8", // The ID of this integration.
+                region: "us-south", // The region your integration is hosted in.
+                serviceInstanceID: "1ee840fc-e3cb-48de-b330-ece9e822bbda", // The ID of your service instance.
+                onLoad: function(instance) { instance.render(); }
+                };
+            setTimeout(function(){
+                const t=document.createElement('script');
+                t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+                document.head.appendChild(t);
+            });
+        </script>
     </body>
 </html>
